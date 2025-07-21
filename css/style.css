@@ -1,0 +1,12 @@
+* {
+    background-color: #1a1b26;
+    color: white;
+}
+@font-face {
+    font-family: BitCount;
+    src: url(https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap);
+} 
+
+h1 {
+  font-family: BitCount;
+}
