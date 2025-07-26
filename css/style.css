@@ -2,11 +2,24 @@
     background-color: #1a1b26;
     color: white;
 }
+body{
+  padding-left: 2%;
+}
 @font-face {
-    font-family: BitCount;
+    font-family: 'BitCount Prop Single';
     src: url(https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap);
 } 
 
 h1 {
-  font-family: BitCount;
+  font-family: 'BitCount Prop Single';
+  font-size: 250;
+}
+
+a{
+  text-decoration: none;
+  color:antiquewhite;
+}
+
+a:hover{
+  color:chartreuse;
 }
