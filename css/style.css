@@ -1,9 +1,13 @@
 * {
-    background-color: #1a1b26;
-    color: white;
+  background-color: #282a36;
+  color: #f8f8f2;
 }
 body{
-  padding-left: 2%;
+   min-height: 95vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
 }
 @font-face {
     font-family: 'BitCount Prop Single';
@@ -13,15 +17,33 @@ body{
 h1 {
   font-family: 'BitCount Prop Single';
   font-size: 250;
+  color: #f8f8f2;
+}
+
+h3 {
+  display: inline-block;
+  font-size: inherit;
+  padding: 0 0.5em;
+  margin-bottom: 0;
+  background-color: #ff79c6;
+  color: #f8f8f2;
+}
+
+.text-secondary {
+  color: #bd93f9;
+}
+
+.text-background {
+  color: #8be9fd;
 }
 
 a{
   text-decoration: none;
-  color:antiquewhite;
+  color: #8be9fd;
 }
 
 a:hover{
-  color:chartreuse;
+  color: #50fa7b;
 }
 
 .typeme {
@@ -47,7 +69,7 @@ a:hover{
 }
     
 @keyframes blink {
-  50% { border-color: transparent;}
+  50% { border-color: transparent; } 
 }
 
 /* dynamic resizing */
