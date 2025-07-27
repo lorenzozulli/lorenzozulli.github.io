@@ -1,7 +1,15 @@
+/*
+DRACULA THEME:
+  - background color
+  -foreground color
+*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 * {
   background-color: #282a36;
   color: #f8f8f2;
-}
+  font-family: 'Source Code Pro', wght;
+} 
 body{
    min-height: 95vh;
   padding: 1rem;
