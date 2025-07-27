@@ -47,7 +47,7 @@ a:hover{
 }
 
 .typeme {
-  width: 30ch;
+  display: inline-block;
   animation: typing 2s steps(25), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
