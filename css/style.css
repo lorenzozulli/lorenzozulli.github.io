@@ -54,6 +54,13 @@ a:hover{
   color: #50fa7b;
 }
 
+.description {
+  width: 100%;
+  max-width: 80ch;
+}
+
+/* typeme stuff  */
+
 .typeme {
   display: inline-block;
   animation: typing 2s steps(25), blink .5s step-end infinite alternate;
