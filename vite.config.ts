@@ -14,6 +14,7 @@ export default defineConfig({
     }),
     react(),
   ],
+  base: '/lorenzozulli.github.io',
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "./src"),
