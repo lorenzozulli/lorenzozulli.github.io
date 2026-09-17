@@ -1,9 +1,10 @@
-import { createRootRoute, createRoute, createRouter, redirect } from '@tanstack/react-router';
+import { createHashHistory, createRootRoute, createRoute, createRouter, redirect } from '@tanstack/react-router';
 import App from "../App";
 import { AboutPage } from '@/pages/AboutPage/AboutPage';
 import { ArticlesPage } from '@/pages/ArticlesPage/ArticlesPage';
 import { NotFoundPage } from '@/shared/components/organisms/NotFoundPage/NotFoundPage';
 
+const hashHistory = createHashHistory()
 
 const rootRoute = createRootRoute({
   component: App,
@@ -30,5 +31,6 @@ export const router = createRouter({
     aboutPageRoute,
     articlesPageRoute,
   ]),
-  basepath: '/lorenzozulli.github.io'
+  basepath: '/lorenzozulli.github.io',
+  history: hashHistory
 });
