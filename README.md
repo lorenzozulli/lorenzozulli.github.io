@@ -1,2 +1,2 @@
 # lorenzozulli.github.io
-Lorenzo Zulli official website repository
+Official website of Lorenzo Zulli

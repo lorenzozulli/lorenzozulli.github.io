@@ -1,0 +1,9 @@
+.tab-link {
+  display: inline-block;
+  font-size: inherit;
+  padding: 0 0.5em;
+  margin-bottom: 0;
+  margin-right: 0.5em;
+  background-color: var(--color-cyan);
+  color: var(--color-background);
+}
