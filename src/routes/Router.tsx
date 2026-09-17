@@ -1,18 +1,26 @@
-import { createHashHistory, createRootRoute, createRoute, createRouter, redirect } from '@tanstack/react-router';
+import {
+  createRootRoute,
+  createRoute,
+  createRouter,
+  redirect
+} from '@tanstack/react-router';
 import App from "../App";
 import { AboutPage } from '@/pages/AboutPage/AboutPage';
 import { ArticlesPage } from '@/pages/ArticlesPage/ArticlesPage';
 import { NotFoundPage } from '@/shared/components/organisms/NotFoundPage/NotFoundPage';
 
-const hashHistory = createHashHistory()
-
 const rootRoute = createRootRoute({
   component: App,
   notFoundComponent: NotFoundPage,
-  beforeLoad: () => {
-    if(window.location.pathname === '/') throw redirect({ to: aboutPageRoute.to })
-  }
 });
+
+const indexRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/',
+  beforeLoad: () => {
+    throw redirect({ to: '/about' })
+  },
+})
 
 const aboutPageRoute = createRoute({
   getParentRoute: () => rootRoute,
@@ -28,8 +36,8 @@ const articlesPageRoute = createRoute({
 
 export const router = createRouter({
   routeTree: rootRoute.addChildren([
+    indexRoute,
     aboutPageRoute,
     articlesPageRoute,
   ]),
-  history: hashHistory
 });

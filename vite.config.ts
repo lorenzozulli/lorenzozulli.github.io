@@ -14,7 +14,7 @@ export default defineConfig({
     }),
     react(),
   ],
-  base: './',
+  base: '/',
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "./src"),

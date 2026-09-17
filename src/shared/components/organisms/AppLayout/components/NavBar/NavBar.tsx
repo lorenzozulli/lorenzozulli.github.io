@@ -11,7 +11,7 @@ export const NavBar = () => {
     <nav className="py-2">
       {navBarItems.map((item) => (
         <Link
-          to={`/lorenzozulli.github.io/${item.to}`}
+          to={item.to}
           className={'tab-link'}
         >{ item.label }</Link>
       ))}
