@@ -31,6 +31,5 @@ export const router = createRouter({
     aboutPageRoute,
     articlesPageRoute,
   ]),
-  basepath: '/lorenzozulli.github.io',
   history: hashHistory
 });
