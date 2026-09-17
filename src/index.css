@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+
+@custom-variant dark (&:is(.dark *));
+
+@font-face {
+    font-family: 'BitCount Prop Single';
+    src: url(https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap);
+}
+
+@theme {
+    --color-background: #282A36;
+    --color-current-line: #6272A4;
+    --color-selection: #44475A;
+    --color-foreground: #F8F8F2;
+    --color-comment: #6272A4;
+    --color-red: #FF55555;
+    --color-orange: #FFB86C;
+    --color-yellow: #F1FA8C;
+    --color-green: #50FA7B;
+    --color-cyan: #8BE9FD;
+    --color-purple: #BD93F9;
+    --color-pink: #FF79C6;
+}
+
+* {
+    box-sizing: border-box;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: 'Source Code Pro', wght;
+}
+
+h3 {
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  padding: 0 0.5em;
+  margin-bottom: 0;
+  background-color: var(--color-yellow);
+  color: var(--color-background);
+}
+
+.text-secondary {
+  color: var(--color-purple);
+}
+
+.text-background {
+  color: var(--color-green);
+}
+
+a {
+    color: var(--color-comment);
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
